@@ -1,7 +1,7 @@
 import time
 import os
 
-class ShkilaGamesBot:
+class start:
     def main(self):
         self.slowType("1 : запуск бота", .02)
         self.slowType("2 : отправка эмбеда", .02)
@@ -19,8 +19,4 @@ class ShkilaGamesBot:
             time.sleep(speed)
         if newLine:
             print()
-
-if __name__ == '__main__':
-    Bot = ShkilaGamesBot()
-    Bot.main()
 
