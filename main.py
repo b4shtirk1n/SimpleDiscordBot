@@ -6,12 +6,12 @@ import server
 from discord.ext import commands
 from config import *
 
-#настройки
-
 token = (Ctoken)
 prefix = (Cprefix)
 bot = commands.Bot(command_prefix=(prefix))
-bot.remove_command('help')
+bot.remove_command('help') #удаление стандартного "help"
+
+#канал для бота
 
 @bot.event
 async def on_message(ctx):
