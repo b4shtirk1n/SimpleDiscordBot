@@ -1,4 +1,5 @@
 Ctoken = ''
 Cprefix = ''
+Cserver = ''
 Cchannel = 
 

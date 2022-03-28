@@ -7,7 +7,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    channel = client.get_channel(int('856822748693528586'))
+    channel = client.get_channel(int(''))
     Eembed = discord.Embed(
         title = f"бимбим",
         description = f'бамбам',
