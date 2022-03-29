@@ -8,11 +8,11 @@ class Start:
         self.slowType("2 : отправка эмбеда (перед запуском отредактируйте embed.py)", .02)
         pick = float(input("\n"))
         if pick == 1:
-            os.startfile('main.py')
-            os.startfile('sender.py')
-            os.startfile('msglogger.py')
+            subprocess.call(["start", "python", "main.py"], shell=True)
+            subprocess.call(["start", "python", "sender.py"], shell=True)
+            subprocess.call(["start", "python", "msglogger.py"], shell=True)
         if pick == 2:
-            os.startfile('embed.py')
+            subprocess.call(["start", "python", "embed.py"], shell=True)
 
     #метод для медленной печати
 
