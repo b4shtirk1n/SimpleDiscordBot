@@ -23,7 +23,6 @@ class Start:
         if newLine:
             print()
 
-if __name__ == '__main__':
-    start = Start()
-    start.main()
+start = Start()
+start.main()
 
