@@ -1,5 +1,5 @@
 import time
-import os
+import subprocess
 
 #запуск выбранного элемента
 class Start:
