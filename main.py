@@ -1,9 +1,11 @@
+from msilib.schema import Component
 import discord
 import asyncio
 import random
 import server
 
 from discord.ext import commands
+from discord_together import DiscordTogether
 from config import *
 
 token = (Ctoken)
@@ -259,10 +261,16 @@ async def punch(ctx, member: discord.Member = None):
     await ctx.send(embed=embed)
     await ctx.message.delete()
 
+@bot.command(pass_content=True)
+async def watch(ctx):
+    link = await bot.togetherControl.create_link(ctx.author.voice.channel.id, 'youtube')
+    await ctx.send(link)
+
 #status
 
 @bot.event
 async def on_ready():
+    bot.togetherControl = await DiscordTogether(token)
     await bot.change_presence(
         status = discord.Status.online,
         activity = discord.Game (f'{prefix}help')
