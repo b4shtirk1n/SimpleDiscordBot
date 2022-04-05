@@ -23,5 +23,11 @@
         2. asyncio
         3. flask
         4. random
-        5. time
+        5. youtube_dl
+        6. discordTogether
+        7. timeout
+
+3. скачать **ffmpeg** и поместить **ffmpeg.exe** в
+
+       C:\Users\user\AppData\Local\Programs\Python\Python310\Scripts
 
