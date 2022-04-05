@@ -2,22 +2,21 @@ import discord
 
 from config import *
 
-token = (Ctoken)
-client = discord.Client()
+token = (Gtoken)
+bot = discord.Client()
 
-@client.event
+@bot.event
 async def on_ready():
-    channel = client.get_channel(int(''))
-    Eembed = discord.Embed(
+    channel = bot.get_channel(int(''))
+    embed = discord.Embed(
         title = f"бимбим",
         description = f'бамбам',
         colour = discord.Colour.from_rgb(255,255,255)
         )
-    
-    if await channel.send(embed=Eembed):
+    if await channel.send(embed=embed):
         print('эмбед отправлен')
     else: 
         print('ошибка')
 
-client.run(token)
+bot.run(token)
 
